@@ -1,0 +1,11 @@
+[package]
+name = "bcm2837"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+cortex-a = { version = "0.1.0", path = "../cortex-a" }
+kernel = { git = "https://github.com/tock/tock", branch = "master" }
+tock-cells = { git = "https://github.com/tock/tock", branch = "master" }
+tock-registers = { git = "https://github.com/tock/tock", branch = "master" }

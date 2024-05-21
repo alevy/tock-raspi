@@ -1,0 +1,8 @@
+[build]
+target = "aarch64-unknown-none"
+
+[target.aarch64-unknown-none]
+rustflags = [
+  "-C", "link-arg=-Trpi3b/layout.ld"
+]
+runner = "./run.sh"
